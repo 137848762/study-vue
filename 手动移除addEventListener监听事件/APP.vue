@@ -11,6 +11,7 @@
 		beforeDestroy() {
 			// 在组件销毁前移除监听事件
 			this.$refs.myElement.removeEventListener('click',this.handleClick);
+			// 控制台没打印2
 			console.log("2");
 		},
 		methods:{
@@ -20,13 +21,3 @@
 		}
 	}
 </script>
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
